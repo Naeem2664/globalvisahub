@@ -4,6 +4,33 @@ import React from "react";
 import { Button } from "@headlessui/react";
 import Link from "next/link";
 import BottomAdSection from "@/components/BottomAdSection";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Global Visa Hub | Visa Information & Services",
+  description: "Find updated visa requirements, application support, and travel guides for every country. Travel the world confidently with Global Visa Hub.",
+  keywords: [
+    "visa information", 
+    "travel visa", 
+    "visa services", 
+    "visa requirements", 
+    "visa application", 
+    "tourist visa", 
+    "student visa", 
+    "work visa", 
+    "global visa hub",
+    "visa verification",
+    "travel documents"
+  ],
+  openGraph: {
+    title: "Global Visa Hub",
+    description: "Your trusted partner for global visa information and support.",
+    url: "https://globalvisahub.com",
+    siteName: "Global Visa Hub",
+    locale: "en_US",
+    type: "website",
+  },
+};
 
 const page = () => {
   return (

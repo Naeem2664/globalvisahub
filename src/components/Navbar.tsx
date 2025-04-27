@@ -75,9 +75,8 @@ export default function Example() {
       <DisclosurePanel className="sm:hidden w-full">
         <div className="space-y-1 px-2 pt-2 pb-3">
           {navigation.map((item) => (
-            <DisclosureButton
+            <Link
               key={item.name}
-              as="a"
               href={item.href}
               onClick={() => setActive(item.href)}
               className={classNames(
@@ -88,7 +87,7 @@ export default function Example() {
               )}
             >
               {item.name}
-            </DisclosureButton>
+            </Link>
           ))}
         </div>
       </DisclosurePanel>
